@@ -14,7 +14,7 @@ module.exports = {
       let payload = request.payload;
       logger(payload, 'payload');
 
-      if (payload.token !== process.ENV.SLACK_TOKEN) {
+      if (payload.token !== process.env.SLACK_TOKEN) {
         return reply('unautorized');
       }
 
