@@ -23,9 +23,9 @@ module.exports = {
       } else {
         return reply({
           response_type: 'in_channel',
-          text: 'Ahoy! ${payload.user_name}',
+          text: `Ahoy! ${payload.user_name}`,
           attachments: [
-            { text: 'How are you? ${payload.user_name}' }
+            { text: `How are you? ${payload.user_name}` }
           ]
         });
       }
