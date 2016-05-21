@@ -2,7 +2,7 @@
 
 const chalk = require('chalk');
 
-module.exports = (message, name='') => {
+module.exports = (message, name) => {
   if (typeof message === 'object') {
     console.log(chalk.blue('============================'));
     console.log(chalk.blue(name));
